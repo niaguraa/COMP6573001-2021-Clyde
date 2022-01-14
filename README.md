@@ -7,9 +7,8 @@ Github: github.com/niaguraa
 
 ## Steps
 
-###1. Create S3 Bucket
-
-In my case, I named it "clyde-project-bucket". This bucket is to store the website files needed to run it on cloud. Your HTML, CSS, along side with the other files correlating with the website should be stored here.
+**1. Create S3 Bucket**
+\nIn my case, I named it "clyde-project-bucket". This bucket is to store the website files needed to run it on cloud. Your HTML, CSS, along side with the other files correlating with the website should be stored here.
 
 ###2. Create VPC
 
