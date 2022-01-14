@@ -16,3 +16,6 @@ In my case, I named it "clyde-project-bucket". This bucket is to store the websi
 Leave settings as default
 
 **3. Create Internet Gateway**
+
+Create the Public Subnets. In my case, I create 2 Public Subnets with different regions. Then enable the "Enable auto-assign public IPv4 address" in Subnet settings.
+
