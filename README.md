@@ -19,3 +19,7 @@ Leave settings as default
 
 Create the Public Subnets. In my case, I create 2 Public Subnets with different regions. Then enable the "Enable auto-assign public IPv4 address" in Subnet settings.
 
+**4. Create Route Tables**
+
+Create a new Route Table, then connect the previous subnets to it. Assign the public subnets to public route table.
+*note: What differs public subnet to private is that Public Subnet has Internet Gateway attached to the Route Table*
