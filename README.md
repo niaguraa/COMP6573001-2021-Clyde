@@ -23,3 +23,8 @@ Create the Public Subnets. In my case, I create 2 Public Subnets with different 
 
 Create a new Route Table, then connect the previous subnets to it. Assign the public subnets to public route table.
 *note: What differs public subnet to private is that Public Subnet has Internet Gateway attached to the Route Table*
+
+
+**5. Create IAM Roles**
+- SSM Role = To test run EC2 to the Internet (AmazonSSMFullAccess)
+- S3 Role = To download S3 bucket contents to EC2 Instance (AmazonS3FullAccess)
