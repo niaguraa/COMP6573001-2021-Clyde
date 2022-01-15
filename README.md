@@ -28,3 +28,14 @@ Create a new Route Table, then connect the previous subnets to it. Assign the pu
 **5. Create IAM Roles**
 - SSM Role = To test run EC2 to the Internet (AmazonSSMFullAccess)
 - S3 Role = To download S3 bucket contents to EC2 Instance (AmazonS3FullAccess)
+
+**6. Create Security Group for Application Load Balancer**
+a. Auto Load Balancer (ALB) Security Group
+- Inbound rules: HTTP and HTTPS from 0.0.0.0/0 (anywhere)
+
+b. SSH Security Group
+- Inbound rules: SSH with "My IP" as source
+
+c. Web Security Group
+- In bound rules: HTTP and HTTPS (ALB Security Group as Source) and SSH (SSH Security Group as source)
+
