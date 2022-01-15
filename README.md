@@ -39,3 +39,16 @@ b. SSH Security Group
 c. Web Security Group
 - In bound rules: HTTP and HTTPS (ALB Security Group as Source) and SSH (SSH Security Group as source)
 
+
+**7. Create EC2**
+- First, Create key pair
+- Create instances
+In this case, I made 2 Instances for 2 Private Subnets. In Step 6 of making the Instance, select WebServer Security Group for both instances
+- Use the existing key pair we made to launch the instance
+
+
+**8. Create Load Balancer**
+In the creation of Load Balancer, select your VPC and select your Public Subnets for the Availability Zone.
+- Select ALB Security Group
+- Create Target Group
+- Route your "index.html" file in S3 to perform health check
